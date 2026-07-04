@@ -188,7 +188,7 @@ All four key findings consistently point to the same conclusion: **casual riders
 
 **[View Interactive Dashboard on Tableau Public](https://public.tableau.com/views/CyclisticBike-ShareAnalysis_17830814410230/CyclisticBike-ShareHowMembersandCasualRidersDiffer?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
-![Cyclistic Dashboard](dashboard_screenshot.png)
+<img width="999" height="799" alt="dashboard_screenshot png" src="https://github.com/user-attachments/assets/fc5c65e2-e53b-4ba6-9eb6-d0a2ad6c76e3" />
 
 ---
 
@@ -217,7 +217,11 @@ Data shows casual riders average 19.13 minutes per ride and are most active duri
 ## Project Files
 
 - `queries/` — All BigQuery SQL queries used in this project
-- `data/` — Summary CSV files used for Tableau visualizations
+ 
+- [Ride Duration.csv](https://github.com/user-attachments/files/29655776/Ride.Duration.csv)
+- [Weekday vs Weekend.csv](https://github.com/user-attachments/files/29655830/Weekday.vs.Weekend.csv)
+- [Seasonal Patterns.csv](https://github.com/user-attachments/files/29655834/Seasonal.Patterns.csv)
+- [Hourly Patterns.csv](https://github.com/user-attachments/files/29655839/Hourly.Patterns.csv)
 
 ---
 
