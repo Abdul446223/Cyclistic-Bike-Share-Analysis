@@ -1,0 +1,39 @@
+CREATE OR REPLACE TABLE `casestudy1-500707.Cyclistic.Cleaned_master_table` AS (
+
+  SELECT * FROM `Cyclistic.202506-1`
+  UNION ALL
+  SELECT * FROM `Cyclistic.202506-2`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202507-1`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202507-2`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202508-1`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202508-2`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202509-1`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202509-2`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202510-1`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202510`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202511`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202512`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202601`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202602`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202603`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202604`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202605-1`
+   UNION ALL
+  SELECT * FROM `Cyclistic.202605-2`
+);
+
