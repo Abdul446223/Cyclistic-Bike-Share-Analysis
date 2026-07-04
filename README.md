@@ -216,12 +216,22 @@ Data shows casual riders average 19.13 minutes per ride and are most active duri
 
 ## Project Files
 
-- `queries/` — All BigQuery SQL queries used in this project
- 
-- [Ride Duration.csv](https://github.com/user-attachments/files/29655776/Ride.Duration.csv)
-- [Weekday vs Weekend.csv](https://github.com/user-attachments/files/29655830/Weekday.vs.Weekend.csv)
-- [Seasonal Patterns.csv](https://github.com/user-attachments/files/29655834/Seasonal.Patterns.csv)
-- [Hourly Patterns.csv](https://github.com/user-attachments/files/29655839/Hourly.Patterns.csv)
+| File/Folder | Description |
+|---|---|
+| [`queries/`](queries/) | All BigQuery SQL queries used in this project |
+| [`data/`](data/) | Summary CSV files used for Tableau visualizations |
+
+### Queries
+| Query | Description |
+|---|---|
+| `01_master_table.sql` | Combines 18 monthly tables into one master table |
+| `02_cleaned_table.sql` | Removes duplicates, outliers and adds calculated columns |
+| `03_ride_overview.sql` | Total rides, average duration and percentage by group |
+| `04_weekday_weekend.sql` | Weekday vs weekend split by rider type |
+| `05_seasonal_patterns.sql` | Monthly ride counts by rider type |
+| `06_hourly_patterns.sql` | Hourly patterns by day type and rider type |
+| `07_bike_type.sql` | Bike type preferences by rider type |
+| `08_data_quality_checks.sql` | Duplicate, null and outlier checks |
 
 ---
 
