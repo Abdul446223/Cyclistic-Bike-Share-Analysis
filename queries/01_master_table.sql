@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `casestudy1-500707.Cyclistic.Cleaned_master_table` AS (
+CREATE OR REPLACE TABLE `casestudy1-500707.Cyclistic.master_table` AS (
 
   SELECT * FROM `Cyclistic.202506-1`
   UNION ALL
