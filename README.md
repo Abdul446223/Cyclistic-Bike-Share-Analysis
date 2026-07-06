@@ -78,38 +78,6 @@ Two calculated columns were added permanently to the cleaned table to avoid repe
 - **ride_length** — Trip duration in minutes, calculated using TIMESTAMP_DIFF
 - **day_of_week** — Day number extracted from started_at (1 = Sunday, 7 = Saturday)
 
-### Cleaning Query
-
-```sql
-CREATE OR REPLACE TABLE `casestudy1-500707.Cyclistic.Cleaned_master_table` AS
-SELECT   
-    ride_id,
-    rideable_type,
-    started_at,
-    ended_at,
-    TIMESTAMP_DIFF(ended_at, started_at, MINUTE) AS ride_length,
-    EXTRACT(DAYOFWEEK FROM started_at) AS day_of_week,
-    start_station_name,
-    start_station_id,
-    end_station_name,
-    end_station_id,
-    start_lat,
-    start_lng,
-    end_lat,
-    end_lng,
-    member_casual
-FROM
-    `casestudy1-500707.Cyclistic.master_table`
-WHERE
-    TIMESTAMP_DIFF(ended_at, started_at, MINUTE) > 0
-    AND 
-    TIMESTAMP_DIFF(ended_at, started_at, MINUTE) < 1440
-    AND
-    started_at < ended_at
-QUALIFY
-    ROW_NUMBER() OVER(PARTITION BY ride_id ORDER BY started_at) = 1;
-```
-
 ### After Cleaning
 
 - **Rows removed:** 167,223 (167,159 due to duration outliers + 35 duplicates + 29 impossible timestamps)
